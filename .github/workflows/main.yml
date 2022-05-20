@@ -20,7 +20,7 @@ jobs:
     - name: Install dependencies
       run: |
         export DEBIAN_FRONTEND=noninteractive
-        sudo -E apt install -y cmake libgsl-dev g++ gcc git 
+        sudo -E apt install -y g++ gcc cmake git 
         sudo -E apt install python3-tk python-tk
         python -m pip install numpy matplotlib h5py --user
     - name: Build
