@@ -22,8 +22,7 @@ jobs:
       run: |
         export DEBIAN_FRONTEND=noninteractive
         sudo -E apt install python3-tk python-tk
-        sudo -E apt install -y h5py
-        python -m pip install numpy matplotlib  --user
+        python -m pip install numpy matplotlib h5py --user
     - name: Build
       run: |
         python setup.py install
