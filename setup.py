@@ -22,7 +22,7 @@ setuptools.setup(
         long_description_content_type='text/markdown',
         packages=["TCAnalaysis","TCAnalaysis.Cppcode"],
         package_dir={'TCAnalaysis': "."},
-        ext_modules=[Extension('tc', ['Cppcode/tcDefaults.cpp','Cppcode/tiScore.cpp], include_dirs=['extern/pybind11/include'])],
+        ext_modules=[Extension('tc', ['Cppcode/tcDefaults.cpp','Cppcode/tiScore.cpp'], include_dirs=['extern/pybind11/include'])],
         install_requires = ['numpy','matplotlib','h5py'],
         
         #dependency_links=[
