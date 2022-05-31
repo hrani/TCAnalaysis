@@ -16,7 +16,7 @@ class git_clone_external(build_ext):
     def run(self):
         print("[INFO ] Running tests... ")
         #subprocess.check_call([os.path.isdir(extern/pybind11)]) 
-        #subprocess.check_call(['git', 'clone', 'https://github.com/pybind/pybind11/','extern/pybind11/'])
+        subprocess.check_call(['git', 'clone', 'https://github.com/pybind/pybind11/','extern/pybind11/'])
         build_ext.run(self)
 
 class get_pybind_include(object):
